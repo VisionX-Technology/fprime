@@ -27,10 +27,10 @@ class StubCpu : public CpuInterface {
     StubCpu() = default;
 
     //! \brief copy constructor
-    StubCpu(const StubCpu& other) = delete;
+    //StubCpu(const StubCpu& other) = delete;
 
     //! \brief default copy assignment
-    CpuInterface& operator=(const CpuInterface& other) override = delete;
+    //CpuInterface& operator=(const CpuInterface& other) override = delete;
 
     //! \brief destructor
     //!

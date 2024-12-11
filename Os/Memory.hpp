@@ -24,10 +24,10 @@ class MemoryInterface {
     virtual ~MemoryInterface() = default;
 
     //! \brief copy constructor is forbidden
-    MemoryInterface(const MemoryInterface& other) = delete;
+    //MemoryInterface(const MemoryInterface& other) = delete;
 
     //! \brief assignment operator is forbidden
-    virtual MemoryInterface& operator=(const MemoryInterface& other) = delete;
+    //virtual MemoryInterface& operator=(const MemoryInterface& other) = delete;
 
     //! \brief get system memory usage
     //!
@@ -53,13 +53,13 @@ class Memory final : public MemoryInterface {
     ~Memory() final;
 
     //! \brief copy constructor is forbidden
-    Memory(const MemoryInterface& other) = delete;
+    //Memory(const MemoryInterface& other) = delete;
 
     //! \brief copy constructor is forbidden
-    Memory(const MemoryInterface* other) = delete;
+    //Memory(const MemoryInterface* other) = delete;
 
     //! \brief assignment operator is forbidden
-    MemoryInterface& operator=(const MemoryInterface& other) override = delete;
+    //MemoryInterface& operator=(const MemoryInterface& other) override = delete;
 
     //-----------------------------------------------------------------------------
     // Interface methods

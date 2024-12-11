@@ -53,13 +53,13 @@ class QueueInterface {
     virtual ~QueueInterface() = default;
 
     //! \brief copy constructor is forbidden
-    QueueInterface(const QueueInterface& other) = delete;
+    //QueueInterface(const QueueInterface& other) = delete;
 
     //! \brief copy constructor is forbidden
-    QueueInterface(const QueueInterface* other) = delete;
+    //QueueInterface(const QueueInterface* other) = delete;
 
     //! \brief assignment operator is forbidden
-    virtual QueueInterface& operator=(const QueueInterface& other) = delete;
+    //virtual QueueInterface& operator=(const QueueInterface& other) = delete;
 
     //! \brief create queue storage
     //!
@@ -159,13 +159,13 @@ class Queue final : public QueueInterface {
     virtual ~Queue();
 
     //! \brief copy constructor is forbidden
-    Queue(const Queue& other) = delete;
+    //Queue(const Queue& other) = delete;
 
     //! \brief copy constructor is forbidden
-    Queue(const Queue* other) = delete;
+    //Queue(const Queue* other) = delete;
 
     //! \brief assignment operator is forbidden
-    QueueInterface& operator=(const QueueInterface& other) override = delete;
+    //QueueInterface& operator=(const QueueInterface& other) override = delete;
 
     //! \brief create queue storage through delegate
     //!

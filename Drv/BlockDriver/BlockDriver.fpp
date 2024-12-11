@@ -40,7 +40,7 @@ module Drv {
 
     @ Internal interrupt reporting interface
     internal port InterruptReport(
-                                   interrupt: U32 @< The interrupt register value
+                                   interrpt: U32 @< The interrupt register value
                                  ) \
       priority 1
 

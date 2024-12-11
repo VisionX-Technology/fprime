@@ -24,10 +24,10 @@ class CpuInterface {
     virtual ~CpuInterface() = default;
 
     //! \brief copy constructor is forbidden
-    CpuInterface(const CpuInterface& other) = delete;
+    //CpuInterface(const CpuInterface& other) = delete;
 
     //! \brief assignment operator is forbidden
-    virtual CpuInterface& operator=(const CpuInterface& other) = delete;
+    //virtual CpuInterface& operator=(const CpuInterface& other) = delete;
 
     //! \brief Request the count of the CPUs detected by the system
     //!
@@ -66,13 +66,13 @@ class Cpu final : public CpuInterface {
     ~Cpu() final;
 
     //! \brief copy constructor is forbidden
-    Cpu(const CpuInterface& other) = delete;
+    //Cpu(const CpuInterface& other) = delete;
 
     //! \brief copy constructor is forbidden
-    Cpu(const CpuInterface* other) = delete;
+    //Cpu(const CpuInterface* other) = delete;
 
     //! \brief assignment operator is forbidden
-    CpuInterface& operator=(const CpuInterface& other) override = delete;
+    //CpuInterface& operator=(const CpuInterface& other) override = delete;
 
     //-----------------------------------------------------------------------------
     // Interface methods

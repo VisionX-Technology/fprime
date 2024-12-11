@@ -66,7 +66,7 @@ class PriorityQueue : public Os::QueueInterface {
     PriorityQueue(const QueueInterface* other) = delete;
 
     //! \brief assignment operator is forbidden
-    PriorityQueue& operator=(const QueueInterface& other) override = delete;
+    //PriorityQueue& operator=(const QueueInterface& other) override = delete;
 
     //! \brief create queue storage
     //!

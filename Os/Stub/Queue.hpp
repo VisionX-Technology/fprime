@@ -22,13 +22,13 @@ class StubQueue : public QueueInterface {
     virtual ~StubQueue() = default;
 
     //! \brief copy constructor is forbidden
-    StubQueue(const QueueInterface& other) = delete;
+    //StubQueue(const QueueInterface& other) = delete;
 
     //! \brief copy constructor is forbidden
-    StubQueue(const QueueInterface* other) = delete;
+    //StubQueue(const QueueInterface* other) = delete;
 
     //! \brief assignment operator is forbidden
-    StubQueue& operator=(const QueueInterface& other) override = delete;
+    //StubQueue& operator=(const QueueInterface& other) override = delete;
 
     //! \brief create queue storage
     //!

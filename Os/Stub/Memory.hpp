@@ -27,10 +27,10 @@ class StubMemory : public MemoryInterface {
     StubMemory() = default;
 
     //! \brief copy constructor
-    StubMemory(const StubMemory& other) = delete;
+    //StubMemory(const StubMemory& other) = delete;
 
     //! \brief default copy assignment
-    MemoryInterface& operator=(const MemoryInterface& other) override = delete;
+    //MemoryInterface& operator=(const MemoryInterface& other) override = delete;
 
     //! \brief destructor
     //!
